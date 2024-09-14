@@ -1,0 +1,160 @@
+@import "base/variables.scss";
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  --background-color: #{$color-white};
+  --main-color: #{$color-black};
+  --search-border-color: #{$color-purple};
+  --search-background-color: #{$color-white-dark};
+  --search-text-color: #{$color-black};
+  --dark-mode-icon: #{$color-grey};
+  --line-color: #{$color-light-grey};
+  --icon-fill: #{$color-dark-purple};
+  --icon-play: #{$color-white};
+  --synonyms-color: #{$color-purple};
+  --grey-meaning: #{$color-grey};
+  --loader: #{$color-purple};
+  --purple-error: #{$color-purple};
+  --fill-add-button: #{$color-purple};
+  --save-button: #{$color-black};
+}
+
+[data-theme="dark"] {
+  --background-color: #{$color-black};
+  --main-color:#{$color-white};
+  --search-border-color: #{$color-white};
+  --search-background-color: #{$color-black-3};
+  --search-text-color: #{$color-white};
+  --dark-mode-icon: #{$color-purple};
+  --save-button: #{$color-white};
+}
+
+
+*,
+*::after,
+*::before {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease;
+}
+
+#root {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+@media(min-width: 2560px) {
+  html {
+    font-size: 95%;
+  }
+
+  #root {
+    max-width: 1200px;
+  }
+
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+  html {
+    font-size: 80%;
+  }
+
+  #root {
+    max-width: 950px;
+  }
+
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  #root {
+    max-width: 720px;
+  }
+
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #root {
+    max-width: 620px;
+  }
+
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  html  {
+    font-size: 60%;
+  }
+
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  #root {
+    max-width: 520px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  #root {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 1.5rem;
+    margin: 3rem;
+  }
+
+  #root {
+    max-width: 330px;
+  }
+}

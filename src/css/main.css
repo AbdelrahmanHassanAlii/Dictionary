@@ -1,0 +1,139 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --background-color: #FFFFFF;
+  --main-color: #050505;
+  --search-border-color: #AA45ED;
+  --search-background-color: #F4F4F4;
+  --search-text-color: #050505;
+  --dark-mode-icon: #757575;
+  --line-color: #979797;
+  --icon-fill: hsl(328, 98%, 49%);
+  --icon-play: #FFFFFF;
+  --synonyms-color: #AA45ED;
+  --grey-meaning: #757575;
+  --loader: #AA45ED;
+  --purple-error: #AA45ED;
+  --fill-add-button: #AA45ED;
+  --save-button: #050505;
+}
+
+[data-theme=dark] {
+  --background-color: #050505;
+  --main-color:#FFFFFF;
+  --search-border-color: #FFFFFF;
+  --search-background-color: #2D2D2D;
+  --search-text-color: #FFFFFF;
+  --dark-mode-icon: #AA45ED;
+  --save-button: #FFFFFF;
+}
+
+*,
+*::after,
+*::before {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease;
+}
+
+#root {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 95%;
+  }
+  #root {
+    max-width: 1200px;
+  }
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+@media (min-width: 1920px) and (max-width: 2560px) {
+  html {
+    font-size: 80%;
+  }
+  #root {
+    max-width: 950px;
+  }
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  #root {
+    max-width: 720px;
+  }
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #root {
+    max-width: 620px;
+  }
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+  #root {
+    max-width: 520px;
+  }
+}
+@media (min-width: 400px) and (max-width: 499px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+  #root {
+    max-width: 420px;
+  }
+}
+@media (min-width: 330px) and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    padding: 1.5rem;
+    margin: 3rem;
+  }
+  #root {
+    max-width: 330px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
